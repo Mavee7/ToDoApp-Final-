@@ -6,6 +6,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#CCCCFF"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
@@ -13,7 +14,7 @@
         android:id="@+id/main_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#F9F8FF"
+        android:background="#CCCCFF"
         tools:context=".MainActivity">
 
         <ScrollView
@@ -21,6 +22,7 @@
             android:layout_height="0dp"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="15dp"
+            android:background="#CCCCFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -30,18 +32,19 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="#CCCCFF">
 
                 <ImageView
                     android:id="@+id/drawerOpenBtn"
                     android:layout_width="36dp"
                     android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
                     android:clickable="true"
                     android:contentDescription="@string/opens_navigation_drawer"
                     android:tintMode="add"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="10dp"
                     app:srcCompat="@drawable/logo" />
 
                 <TextView
@@ -49,6 +52,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"
+                    android:background="#CCCCFF"
                     android:text="Hello User!"
                     android:textColor="#000000"
                     android:textSize="40sp"
@@ -76,6 +80,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
+                    android:background="#CCCCFF"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView2">
@@ -110,6 +115,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="#CCCCFF"
         android:fitsSystemWindows="true"
         app:menu="@menu/activity_main_drawer" />
 </androidx.drawerlayout.widget.DrawerLayout>
