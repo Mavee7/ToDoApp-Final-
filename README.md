@@ -3,3 +3,5 @@
 Final project for DMA Year 4 sem 2. It is a native java application with clean UI.
 
 ![gif](ToDoApp.gif)
+
+<img src="ToDoApp.gif" width="250" height="250"/>
